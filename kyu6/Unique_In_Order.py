@@ -18,7 +18,7 @@ def unique_in_order(iterable):
         if iterable[i] != char:
             #append it to the result list
             result.append(iterable[i])
-            #change the char to new one(char)
+            #change the char to new one
             char = iterable[i]
             
     return result
