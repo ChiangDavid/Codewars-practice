@@ -26,7 +26,7 @@ def count_smileys(arr):
     #The 'r' at the start of the pattern string designates a python "raw" string which passes through backslashes without change
     #Always write "r" before regular experssion
     #? -- match 0 or 1 occurrences of the pattern to its left
-    #[] -- match inside of the pattern
+    #[] -- match inside of the pattern(s)
     smiley = re.compile(r"[:;][-~]?[)D]")
     for smile in arr:
         total += bool(re.match(smiley, smile))
