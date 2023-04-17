@@ -1,1 +1,1 @@
-Codewar 2022
+Where I practice coding skill in CodeWar
