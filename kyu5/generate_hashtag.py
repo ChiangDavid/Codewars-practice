@@ -13,6 +13,8 @@
 # "    Hello     World   "                  =>  "#HelloWorld"
 # ""                                        =>  false
 
+
+#First answer
 def generate_hashtag(s):
     result = ["#",]
     for i in s.split(" "):
@@ -24,5 +26,16 @@ def generate_hashtag(s):
     if len(result) == 0 or len(s) == 0 or len(final) > 140:
         return False
     return final
+    #your code here
+    pass
+
+#Second answer:
+def generate_hashtag(s):
+    ans = "#" + str(s.title().replace(" ",""))
+    
+    if len(ans) > 140 or len(ans) == 0 or len(s) == 0: 
+        return False
+    return ans
+    
     #your code here
     pass
